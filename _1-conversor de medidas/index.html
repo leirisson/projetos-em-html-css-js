@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilosystema.css">
+    <script src="./App.js" defer></script>
+    
+    <title>conversor de Medidas</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Conversor de Unidades</h1>
+        <div class="input-group">
+            <label for="qtd">Digite a quantidade:</label>
+            <input type="number" name="qtd" id="input" placeholder="0">
+        </div>
+
+        <div class="input-group">
+            <label>De: </label>
+            <select name="from" id="from">
+                <option value="m">Metro(s)</option>
+                <option value="km">Quilômetro(s)</option>
+                <option value="cm">Centimetro(s)</option>
+                <option value="mm">Milimetro(s)</option>
+            </select>
+        </div>
+        
+
+      <div class="input-group">
+        <label>Para:</label>
+    <select name="to" id="to">
+        <option value="m">Metro(s)</option>
+        <option value="km">Quilômetro(s)</option>
+        <option value="cm">Centimetro(s)</option>
+        <option value="mm">Milimetro(s)</option>
+    </select>
+      </div>
+        <button id="convert-btn">Converter</button>
+        <div class="output-group">
+            <label for="output">Resultado</label>
+            <input type="text" id="output"  readonly>
+        </div>
+        <div id="message" ></div>
+    </div>
+
+    
+</body>
+</html>
