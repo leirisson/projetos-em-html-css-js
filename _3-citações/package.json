@@ -1,0 +1,12 @@
+{
+  "name": "citacoes",
+  "version": "1.0.0",
+  "description": "App de citações ",
+  "main": "App.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leirisson souza",
+  "license": "ISC"
+}
