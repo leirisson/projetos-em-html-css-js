@@ -7,12 +7,18 @@ Formulario.addEventListener("submit", (e) =>{
     const numeroFormulario = e.target.elements['numero'].value;
     criaElemento(numeroFormulario);
     
+    
 })
 
 
 function criaElemento(numero){
+    // criando um elemento dianmicamente
     const pResultado = document.createElement('p');
+
+    //adcionando a classe de resultado
     pResultado.classList.add("resultado")
+    
     pResultado.innerText = `Numero informado: ${numero}`
     resultado.appendChild(pResultado);
+    
 }
