@@ -7,7 +7,6 @@ itensDaGalarya.forEach((item) => {
     item.addEventListener("click", () => {
         
         const imgUrl = item.querySelector(".galery-img").getAttribute("data-src");
-        console.log(imgUrl)
          lightBoxImagem.setAttribute("src", imgUrl);
          lightBox.style.display = "flex";
     });
