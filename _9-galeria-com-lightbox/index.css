@@ -1,0 +1,87 @@
+/* Option 2: Import via CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    gap: 10px;
+}
+
+.galery-item{
+    flex: 0 0 calc( 33.333% - 10px);
+    background-color: rgba(247, 247, 247, 0.664);
+    padding: 1rem;
+    box-shadow: 2px  3px 5px rgba(0, 0, 0, 0.664);
+    border-radius: 10px;
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+}
+
+.galery-item{
+    width: 100%;
+    height: 100%;
+}
+
+.galery-img{
+    width: 100%;
+    height: 300px;
+    transition: .3s;
+
+}
+
+.galery-img:hover{
+    transform: scale(1.05);
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.514);
+    z-index: 100;
+}
+
+
+.lightbox-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.lightbox-img{
+    max-width:800px;
+    object-fit: cover;
+}
+
+.lightbox-close{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 0.1rem 0.3rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.lightbox-close:hover{
+    color: #f75f0788;
+}
+
